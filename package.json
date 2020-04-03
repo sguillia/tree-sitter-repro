@@ -1,0 +1,22 @@
+{
+  "name": "tree-sitter-repro",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "watch": "tsc -w -p .",
+    "build": "tsc -p .",
+    "postinstall": "npm run update-tree-sitter && npm run build",
+    "update-tree-sitter": "npm i --update tree-sitter"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sguillia/tree-sitter-repro.git"
+  },
+  "author": "sguillia",
+  "homepage": "https://github.com/sguillia/tree-sitter-repro#readme",
+  "dependencies": {
+    "@types/node": "^13.11.0",
+    "tree-sitter": "^0.16.0",
+    "tree-sitter-javascript": "^0.16.0"
+  }
+}
